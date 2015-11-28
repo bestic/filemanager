@@ -1,0 +1,32 @@
+{
+  "files": [
+    {
+      "name": "index.html",
+      "type": "web",
+      "size": 12343,
+      "bookmarked": false,
+      "content": "test"
+    },
+    {
+      "name": "contact.html",
+      "type": "web",
+      "size": 45343,
+      "bookmarked": false,
+      "content": "<b>test</b>"
+    },
+    {
+      "name": "page.html",
+      "type": "web",
+      "size": 34333,
+      "bookmarked": true,
+      "content": "<i>test</i>"
+    },
+    {
+      "name": "text.txt",
+      "type": "txt",
+      "size": 12,
+      "bookmarked": false,
+      "content": "test"
+    }
+  ]
+}

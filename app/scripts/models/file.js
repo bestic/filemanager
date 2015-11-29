@@ -10,6 +10,7 @@ define([
         url: '',
 
         initialize: function() {
+          this.set('active', false);
         },
 
         defaults: {

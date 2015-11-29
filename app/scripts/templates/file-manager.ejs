@@ -1,54 +1,133 @@
 <div class="file-manager-list">
 
-  <table class="table">
-    <thead>
-    <tr>
-      <th style="width: 40%">File Name</th>
-      <th style="width: 20%">File Type</th>
-      <th style="width: 20%">Size (Kb)</th>
-      <th style="width: 20%">Action</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>
-        <div class="form-group">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Type to filter">
-            <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
-          </div>
+  <div class="row">
+    <div class="col-sm-9">
+
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th style="min-width: 36px;"></th>
+          <th style="width: 60%">
+            <a data-sort-field="name">
+              File Name
+              <span class="glyphicon glyphicon-chevron-up"></span>
+              <span class="glyphicon glyphicon-chevron-down"></span>
+            </a>
+
+          </th>
+          <th style="width: 20%">
+            <a data-sort-field="type">
+              File Type
+              <span class="glyphicon glyphicon-chevron-up"></span>
+              <span class="glyphicon glyphicon-chevron-down"></span>
+            </a>
+          </th>
+          <th style="width: 20%">
+            <a data-sort-field="size">
+              Size (Kb)
+              <span class="glyphicon glyphicon-chevron-up"></span>
+              <span class="glyphicon glyphicon-chevron-down"></span>
+            </a>
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>
+          </td>
+          <td>
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" name="filter-name" class="form-control" placeholder="Type to filter">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
+    <div class="col-sm-3 actions-holder">
+
+      <div class="title">Actions</div>
+
+      <div class="actions-select">
+        Select file at the left side by clicking on it
+      </div>
+
+      <div class="actions" style="display: none;">
+        <div class="selected-file-holder">
+          <span class="selected-file-holder-title">Selected File:</span>
+          <span class="selected-file"></span>
         </div>
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    </tbody>
-  </table>
+
+        <div class="action">
+          <button class="btn btn-sm btn-success btn-bookmark" title="Add To Bookmark">
+            <span class="glyphicon glyphicon-bookmark"></span> Bookmark
+          </button>
+        </div>
+
+        <div class="action">
+          <button class="btn btn-sm btn-success btn-preview" title="Preview">
+            <span class="glyphicon glyphicon-eye-open"></span> Preview
+          </button>
+        </div>
+
+        <div class="action">
+          <button class="btn btn-sm btn-success btn-edit" title="Edit">
+            <span class="glyphicon glyphicon-pencil"></span> Edit
+          </button>
+        </div>
+
+        <div class="action">
+          <button class="btn btn-sm btn-danger  btn-delete" title="Download">
+            <span class="glyphicon glyphicon-remove"></span> Remove
+          </button>
+        </div>
+
+      </div>
 
 
-  <div class="global-actions clearfix">
-    <div class="global-actions-leftgroup pull-left">
-      <button class="btn btn-default">
-        <span class="glyphicon glyphicon-list"></span>
-        File List
-      </button>
-      <button class="btn btn-default">
-        <span class="glyphicon glyphicon-bookmark"></span>
-        Bookmarks
-      </button>
     </div>
-    <div class="global-actions-leftgroup pull-right">
-      <button class="btn btn-default">
-        <span class="glyphicon glyphicon-upload"></span>
-        Upload
-      </button>
-      <button class="btn btn-default">
-        <span class="glyphicon glyphicon-plus"></span>
-        Create New
-      </button>
-    </div>
+
   </div>
+
+
+  <div class="row">
+
+    <div class="col-sm-12">
+
+      <div class="global-actions clearfix">
+        <div class="global-actions-leftgroup pull-left">
+          <a class="btn btn-default btn-show-all">
+            <span class="glyphicon glyphicon-list"></span>
+            File List
+          </a>
+          <a class="btn btn-default btn-show-bookmarked">
+            <span class="glyphicon glyphicon-bookmark"></span>
+            Bookmarks
+          </a>
+        </div>
+        <div class="global-actions-leftgroup pull-right">
+          <button class="btn btn-default" style="display: none;">
+            <span class="glyphicon glyphicon-upload"></span>
+            Upload
+          </button>
+          <button class="btn btn-default btn-create">
+            <span class="glyphicon glyphicon-plus"></span>
+            Create New
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
 
 </div>
 

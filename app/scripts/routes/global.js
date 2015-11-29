@@ -16,6 +16,9 @@ define([
       '*any': "unregistered"
     },
 
+    // Currently outputted view
+    activeView: null,
+
     unregistered: function() {
       Backbone.history.navigate('/file-manager', {trigger: true, replace: true});
     },
@@ -26,14 +29,26 @@ define([
 
     fileManagerList: function() {
 
-      var fileCollection = new FileCollection();
-      var fileManagerView = new FileManagerView({
+      this.destroyActiveView();
+
+      var model = new Backbone.Model({
+        'sort-field': null,
+        'sort-direction': 'asc'
+      });
+
+      var fileCollection = new FileCollection(data.files);
+      this.activeView = new FileManagerView({
+        model: model,
         collection: fileCollection
       });
-      fileManagerView.render();
+      $('.content').html(this.activeView.render().$el);
 
-      fileCollection.add(data.files);
+    },
 
+    destroyActiveView: function() {
+      if (this.activeView) {
+        this.activeView.destroy();
+      }
     }
 
 

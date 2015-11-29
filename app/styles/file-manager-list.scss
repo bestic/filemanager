@@ -4,4 +4,74 @@
     margin-bottom: 0;
   }
 
+  table {
+
+    thead {
+
+      a {
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+    }
+
+    tbody {
+      tr {
+        cursor: pointer;
+
+        td {
+          .bookmarked {
+            display: inline-block;
+            min-width: 20px;
+          }
+
+          .file-size {
+            text-align: right;
+          }
+
+          &.file-actions {
+            height: 40px;
+          }
+        }
+
+        &.active {
+          transition: background-color 1s;
+          background-color: #737373;
+        }
+
+      }
+    }
+
+  }
+
+
+  .actions-holder {
+    margin-top: 8px;
+    .title {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .selected-file-holder {
+      margin-bottom: 20px;
+      .selected-file-holder-title {
+        font-weight: bold;
+      }
+    }
+
+    .action {
+      margin-bottom: 5px;
+
+      .btn {
+        min-width: 100px;
+        text-align: left;
+      }
+    }
+  }
+
+  .global-actions {
+    border-top: 1px solid gray;
+    padding-top: 20px;
+  }
+
+
 }

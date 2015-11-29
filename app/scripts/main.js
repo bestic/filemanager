@@ -6,9 +6,13 @@ require.config({
     bootstrap: {
       deps: ['jquery'],
       exports: 'jquery'
-    }
+    },
+    stickit: ['backbone'],
+    'backbone.modal': ['backbone', 'jquery', 'underscore']
   },
   paths: {
+    toastr: '../bower_components/toastr/toastr',
+    stickit: '../bower_components/backbone.stickit/backbone.stickit',
     text: '../bower_components/requirejs-text/text',
     json: '../bower_components/requirejs-plugins/src/json',
     jquery: '../bower_components/jquery/dist/jquery',
@@ -20,7 +24,9 @@ require.config({
 
 require([
   'backbone',
-  'routes/global'
+  'routes/global',
+  'bootstrap',
+  'stickit'
 ], function(Backbone, GlobalRouter) {
   new GlobalRouter();
   Backbone.history.start();

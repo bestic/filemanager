@@ -1,32 +1,32 @@
 {
   "files": [
     {
-      "name": "index.html",
-      "type": "web",
+      "name": "index.txt",
+      "type": "txt",
       "size": 12343,
       "bookmarked": false,
-      "content": "test"
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A culpa ducimus itaque minima? Autem corporis cum dolores est facere, facilis libero, minus modi provident quaerat ratione soluta tempora, temporibus voluptates."
     },
     {
-      "name": "contact.html",
-      "type": "web",
+      "name": "contact.txt",
+      "type": "txt",
       "size": 45343,
       "bookmarked": false,
-      "content": "<b>test</b>"
+      "content": "contacts"
     },
     {
-      "name": "page.html",
-      "type": "web",
+      "name": "page.txt",
+      "type": "txt",
       "size": 34333,
       "bookmarked": true,
-      "content": "<i>test</i>"
+      "content": "page info"
     },
     {
       "name": "text.txt",
       "type": "txt",
       "size": 12,
       "bookmarked": false,
-      "content": "test"
+      "content": "just text"
     }
   ]
 }

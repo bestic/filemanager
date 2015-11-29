@@ -1,0 +1,32 @@
+{
+  "files": [
+    {
+      "name": "index.txt",
+      "type": "txt",
+      "size": 12343,
+      "bookmarked": false,
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A culpa ducimus itaque minima? Autem corporis cum dolores est facere, facilis libero, minus modi provident quaerat ratione soluta tempora, temporibus voluptates."
+    },
+    {
+      "name": "contact.txt",
+      "type": "txt",
+      "size": 45343,
+      "bookmarked": false,
+      "content": "contacts"
+    },
+    {
+      "name": "page.txt",
+      "type": "txt",
+      "size": 34333,
+      "bookmarked": true,
+      "content": "page info"
+    },
+    {
+      "name": "text.txt",
+      "type": "txt",
+      "size": 12,
+      "bookmarked": false,
+      "content": "just text"
+    }
+  ]
+}

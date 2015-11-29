@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "file-manager-edit.css",
+	"sources": [
+		"../../app/styles/file-manager-edit.scss"
+	],
+	"mappings": "",
+	"names": []
+}

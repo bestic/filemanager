@@ -1,0 +1,40 @@
+.file-manager-list .form-group {
+  margin-bottom: 0; }
+
+.file-manager-list table thead a {
+  cursor: pointer;
+  text-decoration: none; }
+
+.file-manager-list table tbody tr {
+  cursor: pointer; }
+  .file-manager-list table tbody tr td .bookmarked {
+    display: inline-block;
+    min-width: 20px; }
+  .file-manager-list table tbody tr td .file-size {
+    text-align: right; }
+  .file-manager-list table tbody tr td.file-actions {
+    height: 40px; }
+  .file-manager-list table tbody tr.active {
+    transition: background-color 1s;
+    background-color: #737373; }
+
+.file-manager-list .actions-holder {
+  margin-top: 8px; }
+  .file-manager-list .actions-holder .title {
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .file-manager-list .actions-holder .selected-file-holder {
+    margin-bottom: 20px; }
+    .file-manager-list .actions-holder .selected-file-holder .selected-file-holder-title {
+      font-weight: bold; }
+  .file-manager-list .actions-holder .action {
+    margin-bottom: 5px; }
+    .file-manager-list .actions-holder .action .btn {
+      min-width: 100px;
+      text-align: left; }
+
+.file-manager-list .global-actions {
+  border-top: 1px solid gray;
+  padding-top: 20px; }
+
+/*# sourceMappingURL=file-manager-list.css.map */

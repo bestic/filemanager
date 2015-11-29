@@ -12,7 +12,6 @@ define([
 
     events: {
       'hidden.bs.modal .modal': 'destroyModal',
-      'click': 'click'
     },
 
     bindings: {
@@ -21,11 +20,6 @@ define([
 
     initialize: function() {
       this.render();
-    },
-
-    // Small hack to prevent change active file
-    click: function(e) {
-      e.stopPropagation();
     },
 
     render: function() {

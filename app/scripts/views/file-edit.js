@@ -12,8 +12,7 @@ define([
 
     events: {
       'hidden.bs.modal .modal': 'destroyModal',
-      'click .btn-primary': 'save',
-      'click': 'click'
+      'click .btn-primary': 'save'
     },
 
     bindings: {
@@ -42,10 +41,6 @@ define([
     save: function() {
       this.trigger('save', this.model);
       this.$('.modal').modal('hide');
-    },
-
-    click: function(e) {
-      e.stopPropagation();
     },
 
     destroyModal: function() {

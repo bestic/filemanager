@@ -172,6 +172,7 @@ define([
       } else {
         toastr.success('File was successfully removed from bookmarks');
       }
+      this.filter();
 
     },
 
